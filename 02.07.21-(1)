@@ -1,0 +1,29 @@
+import java.util.*;
+public class SmallFactorial
+{  
+ public static void main(String[] args)
+ {  
+  int i,fact=1;  
+  int N; 
+  Scanner sc=new Scanner(System.in);
+  N=sc.nextInt();
+  for(i=1;i<=N;i++)
+  {    
+      fact=fact*i;    
+  }    
+  System.out.println("Factorial of "+N+" is: "+fact);    
+ }  
+} 
+
+
+
+
+Output:
+1
+Factorial of 1 is: 1
+2
+Factorial of 2 is: 2
+5
+Factorial of 5 is: 120
+3
+Factorial of 3 is: 6
