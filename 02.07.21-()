@@ -1,0 +1,29 @@
+import java.util.*;
+public class Increment(or)Decrement
+{  
+ public static void main(String args[])
+ {  
+  int n,i=0,j=0;
+  Scanner sc=new Scanner(System.in);
+  n=sc.nextInt();
+  if(n%4==0)
+  {  
+      i=++n;
+      System.out.println(i);    
+  }    
+  else
+  {
+      j=--n;
+      System.out.println(j);    
+  }  
+ } 
+}
+
+
+
+Output:
+12
+13
+
+15
+14
