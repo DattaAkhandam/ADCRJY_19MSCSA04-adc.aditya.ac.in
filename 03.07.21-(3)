@@ -1,0 +1,35 @@
+import java.util.*;
+public class automorphic
+{
+public static void main (String[] args)
+{
+int n;
+Scanner sc= new Scanner(System.in);
+n=sc.nextInt();
+int square=n*n;
+while(n>0)
+{
+if(n%10!=square%10)
+{
+System.out.println("Not an automorphic number"); 
+}
+else
+n=n/10;
+square=square/10;
+{
+System.out.println("An automorphic number");
+}
+}
+}
+}
+
+
+
+
+Output:
+76
+An automorphic number
+25
+An automorphic number
+7
+Not an automorphic number
