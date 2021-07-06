@@ -1,0 +1,30 @@
+import java.util.*;
+class Demo
+{
+public static void main(String arg[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter size of the array");
+int n=sc.nextInt();
+int a[]=new int[n];
+System.out.println(" Enter values into array ");
+for(int i=0;i<n;i++)
+a[i]=sc.nextInt();
+int sum=0;
+for(int i=0;i<n;i++)
+{
+if(a[i]%2==0 || a[i]%2==1)
+sum+=a[i];
+}
+System.out.print("Sum of elements in an array = " + sum);
+}
+}
+
+
+
+Output:
+Enter size of the array
+5
+Enter values into array
+10  5 43 156 8
+Sum of elements in an array = 222
