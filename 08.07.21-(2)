@@ -3,7 +3,7 @@ public class first
 {
 public static void main (String[] args)
 {
-int arr [ ] [ ] =new int [ ] [ ] { { 3,5,9,},{ 7,8,1},{ 10,34,21 }};
+int arr [ ] [ ] =new int [ ] [ ] { { 9,5,65 },{ 14,81,32 },{ 23,3,21 }};
 int l;
 for(int j=0;j<3;j++)
 {
@@ -17,3 +17,10 @@ System.out.println(" Largest element in "+(j+1)+"col : " +l);
 }
 }
 }
+
+
+
+Output:
+Largest in 1 col : 23
+Largest in 2 col : 81
+Largest in 3 col : 65
