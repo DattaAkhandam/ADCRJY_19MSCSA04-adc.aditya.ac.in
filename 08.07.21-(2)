@@ -1,0 +1,19 @@
+import java.util.*;
+public class first
+{
+public static void main (String[] args)
+{
+int arr [ ] [ ] =new int [ ] [ ] { { 3,5,9,},{ 7,8,1},{ 10,34,21 }};
+int l;
+for(int j=0;j<3;j++)
+{
+l=arr[0][j];
+for(int i=1;i<3;i++)
+{
+if(l<arr [ i ][ j ])
+l=arr [ i ][ j ];
+}
+System.out.println(" Largest element in "+(j+1)+"col : " +l);
+}
+}
+}
