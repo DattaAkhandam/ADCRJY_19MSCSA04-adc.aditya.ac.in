@@ -24,4 +24,5 @@ System.out.print(difference(arr,n));
 }
 }
 
-Output: 9
+Output:
+difference = -9
