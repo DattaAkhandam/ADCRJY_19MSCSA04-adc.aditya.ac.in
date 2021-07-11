@@ -1,0 +1,15 @@
+import java.util.*;
+import java.lang.*;
+public class Demo
+{
+public static void main(String args[])
+{
+String s1="ADITYA DEGREE COLLEGE";
+char[] s2=s1.toCharArray();
+for(int i=s2.length-1;i>=0;i--)
+System.out.print(s2[i]);
+}
+}
+
+Output:
+EGELLOC EERGED AYTIDA
