@@ -1,0 +1,13 @@
+import java.util.*;
+import java.lang.*;
+public class Demo
+{
+public static void main(String args[])
+{
+String s1="ADITYA DEGREE COLLEGE";
+System.out.println("LowerCase:"+s1.toLowerCase());
+}
+}
+
+Output:
+LowerCase: aditya degree college
