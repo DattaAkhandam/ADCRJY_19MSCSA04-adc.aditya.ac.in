@@ -1,0 +1,40 @@
+import java.util.*;
+public class Demo
+{
+public static void sample(int arr[], int n)
+{
+boolean issubstring[]=new boolean[n];
+Arrays.fill(issubstring,false);
+for(int i=0;i<n;i++) 
+{
+if(issubstring[i]==true)
+continue;
+int count=1;
+for(int j=i+1;j<n;j++)
+{
+if(arr[i]==arr[j])
+{
+issubstring[j]=true;
+count++;
+}
+}
+System.out.println(arr[i] + " " + count);
+}
+}
+public static void main(String []args)
+{
+int arr[] = new int[]{ 5, 8, 6, 4, 5, 8, 7, 8, 9, 5 };
+int n=arr.length;
+sample(arr,n);
+}
+}
+ 
+ 
+ 
+ Output:
+ 5 3 
+ 8 3
+ 6 1
+ 4 1
+ 7 1
+ 9 1
