@@ -1,0 +1,26 @@
+import java.util.*;
+public class Solution
+{
+public static void main(String args[])
+{
+ArrayList<Integer> A= new ArrayList<Integer>();
+A.add(10);
+A.add(20);
+A.add(30);
+A.add(40);
+System.out.println("ArrayList :"+ A);
+ArrayList<Integer> B = new ArrayList<Integer>();
+B.add(100);
+B.add(200);
+B.add(300);
+B.add(400);
+System.out.println("ArrayList : "+ B);
+A.addAll(B);
+System.out.println("Joined ArrayLists: " + A);
+}
+}
+
+Output:
+ArrayList :[10, 20, 30, 40]
+ArrayList : [100, 200, 300, 400]
+Joined ArrayLists: [10, 20, 30, 40, 100, 200, 300, 400] 
