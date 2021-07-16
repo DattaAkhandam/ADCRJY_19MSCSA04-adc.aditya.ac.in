@@ -1,0 +1,33 @@
+class Solution 
+{
+public int[] sortArrayByParityII(int[] nums)
+{
+ArrayList<Integer> even=new ArrayList<Integer> ();
+ArrayList<Integer> odd=new ArrayList<Integer> ();
+for(int i=0;i<nums.length;i++)
+{
+if(nums[i]%2==0)
+even.add(nums[i]);
+else
+odd.add(nums[i]);
+}
+int i=0;
+for(Integer val:even)
+{
+nums[i]=val;
+i+=2;
+}
+int j=1;
+for(Integer val:odd)
+{
+nums[j]=val;
+j+=2;
+}
+return nums;
+}
+}
+
+Leetcode output:
+Your input : [4,2,5,7]
+Output     : [4,5,2,7]
+Expected   : [4,5,2,7]
