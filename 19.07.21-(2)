@@ -1,0 +1,30 @@
+import java.util.*;
+public class demo
+{
+    public static void main(String[] args)
+    {
+        HashMap<String,Integer> hs=new HashMap<String,Integer>();
+        Scanner sc=new Scanner(System.in);
+        hs.put("sak",5);
+        hs.put("varun",7);
+        hs.put("vijay",3);
+        System.out.println("Enter the String : ");
+        String str=sc.next();
+        if(hs.containsKey(str))
+        {
+            Integer a = hs.get(str);
+            System.out.println(a);
+        }
+        else
+        {
+            return -1;
+    }
+}
+
+Output:
+Enter the String : 
+sak
+5
+Enter the String : 
+hello
+-1
