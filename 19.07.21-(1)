@@ -1,0 +1,48 @@
+import java.util.*;
+public class Menu
+{
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+HashMap<Integer,Integer> hs=new HashMap<>();
+int n,x,y=0;
+while(true)
+{
+System.out.println("1.a x y(add an entry with key x and value y to the HashMap)");
+System.out.println("2.b x (print value of x if present in the HashMap else print -1)");
+System.out.println("3.c (prints the size of the HashMap)");
+System.out.println("4.d x (removes an entry with key x from the HashMap)");
+n=sc.nextInt();
+switch(n)
+{
+case 1:
+System.out.println("Enter the values of x and y :");
+x=sc.nextInt();
+y=sc.nextInt();
+hs.put(x,y);
+break;
+case 2:
+System.out.println("enter element");
+x=sc.nextInt();
+if(hs.containsKey(x))
+{
+Integer a = hs.get(x);
+System.out.println(a);
+}
+break;
+case 3:
+System.out.println(hs.size()+"");
+break;
+case 4:
+x=sc.nextInt();
+System.out.println(hs.remove(x)+"");
+break;
+}
+}
+}
+}
+
+Input:
+5
+a 1 2 b 66 3 b 66 d 1 c
+Output:
+3 
