@@ -1,0 +1,34 @@
+/*
+Iterator<Integer>it=x.keySet().iterator();
+
+while(it.hasNext())
+{
+S.o.p(it.next());
+}
+*/
+/* By using this we can iterate the hashmap*/
+
+import java.util.*;
+public class Demo 
+{
+public static void main(String args[])  
+{
+HashMap<IntegeR,String> hm = new HashMap<Integer,String>(); 
+hm.put(1,"Hi");  
+hm.put(2,"Hai");  
+hm.put(3,"Hello");    
+Iterator<Integer> it =hm.keySet().iterator();     
+while(it.hasNext())  
+{  
+int key=(int)it.next();  
+System.out.println("S.No.: "+key+" Name: "+hm.get(key));  
+}  
+}  
+}  
+
+
+Output:
+
+S.No.: 1    Name: Hi
+S.No.: 2    Name: Hai
+S.No.: 3    Name: Hello
