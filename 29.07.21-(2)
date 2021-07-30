@@ -1,0 +1,35 @@
+import java.util.*;
+class TestClass
+{
+    public static void main(String args[]) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int tc;
+        tc=sc.nextInt();
+        while(tc-->0)
+        {
+            int n;
+            n=sc.nextInt();
+            if(n%2==0 && n<=100000)
+            {
+                if(n!=2)
+                System.out.println("Deepa");
+                else
+                System.out.println("Arjit");
+            }
+        }
+    }
+}
+
+RESULT: Sample Test Cases Passed 
+Time (sec)     : 0.094122
+Memory (KiB)   : 3137132
+Language       : Java
+
+Input :  2
+         4
+         8
+Output : Deepa
+        Deepa
+Expected Correct Output :  Deepa
+                          Deepa
